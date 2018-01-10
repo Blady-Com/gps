@@ -1,6 +1,6 @@
 with "gtkada";
 with "gnatcoll";
-with "gnatcoll_python";
+with "gnatcoll-python";
 with "../shared";
 
 project GNATCOLL_Extras is

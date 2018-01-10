@@ -1,8 +1,8 @@
 with "../common/common";
 with "../shared";
 with "gnatcoll";
-with "gnatcoll_sqlite";
-with "gnatcoll_xref";
+with "gnatcoll-sqlite";
+with "gnatcoll-xref";
 with "../language/language";
 with "../toolchains_editor/core/toolchains_core";
 

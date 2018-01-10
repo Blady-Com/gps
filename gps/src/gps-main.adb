@@ -163,7 +163,7 @@ with KeyManager_Module;
 with KeyManager_Module.Macros;
 with Toolchains_Module;
 with Ada_Semantic_Tree_Module;
-with LAL.Module;
+--  with LAL.Module;
 with Language_Handlers.Assistants;
 with Learn.Views;
 with Memory_Usage_Views.Module;
@@ -189,7 +189,7 @@ with VFS_Module;
 with Vdiff2_Module;
 with Vsearch;
 with Language.Libclang;
-with Ada_Semantic_Tree.Lang;
+--  with Ada_Semantic_Tree.Lang;
 
 procedure GPS.Main is
    package ICS renames Interfaces.C.Strings;
@@ -2237,16 +2237,16 @@ procedure GPS.Main is
 
       Ada_Module.Register_Module (GPS_Main.Kernel);
 
-      LAL.Module.Register_Module
-        (GPS_Main.Kernel,
-         (LAL.Use_LAL_In_Editor  => Use_LAL_In_Editor.Get_Pref,
-          LAL.Use_LAL_In_Outline => Use_LAL_In_Outline.Get_Pref,
-          LAL.Use_LAL_In_Shell   => Use_LAL_In_Shell.Get_Pref,
-          LAL.Use_LAL_In_Info    => Use_LAL_In_Info.Get_Pref,
-          LAL.Use_LAL_In_GNATHUB => Use_LAL_In_GNATHUB.Get_Pref,
-          LAL.Use_LAL_In_COV     => Use_LAL_In_COV.Get_Pref,
-          LAL.Use_LAL_In_Indent  => Use_LAL_In_Indent.Get_Pref),
-         Legacy => Ada_Semantic_Tree.Lang.Ada_Tree_Lang);
+--      LAL.Module.Register_Module
+--        (GPS_Main.Kernel,
+--         (LAL.Use_LAL_In_Editor  => Use_LAL_In_Editor.Get_Pref,
+--          LAL.Use_LAL_In_Outline => Use_LAL_In_Outline.Get_Pref,
+--          LAL.Use_LAL_In_Shell   => Use_LAL_In_Shell.Get_Pref,
+--          LAL.Use_LAL_In_Info    => Use_LAL_In_Info.Get_Pref,
+--          LAL.Use_LAL_In_GNATHUB => Use_LAL_In_GNATHUB.Get_Pref,
+--          LAL.Use_LAL_In_COV     => Use_LAL_In_COV.Get_Pref,
+--          LAL.Use_LAL_In_Indent  => Use_LAL_In_Indent.Get_Pref),
+--         Legacy => Ada_Semantic_Tree.Lang.Ada_Tree_Lang);
 
       if Active (CPP_Trace) then
          Cpp_Module.Register_Module (GPS_Main.Kernel);

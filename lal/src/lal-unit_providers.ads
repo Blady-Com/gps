@@ -36,7 +36,7 @@ private
        Kernel : GPS.Core_Kernels.Core_Kernel;
    end record;
 
-   overriding function Get_Unit
+   function Get_Unit
      (Provider    : Unit_Provider;
       Context     : Libadalang.Analysis.Analysis_Context;
       Node        : Libadalang.Analysis.Ada_Node;

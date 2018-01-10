@@ -1,9 +1,9 @@
 with "../kernel/kernel_core";
 with "../shared";
-with "../laltools/src/lal_tools";
+with "lal_tools";
 
 with "libadalang";
-with "gnatcoll_python";
+with "gnatcoll-python";
 project LAL is
 
    for Source_Dirs use ("src");

@@ -111,7 +111,7 @@ package body LAL.Ada_Languages is
 
       Root := Libadalang.Analysis.Root (Unit);
 
-      if Root = null then
+      if Root = Libadalang.Analysis.No_Ada_Node then
          Lang.Kernel.Messages_Window.Insert_UTF8
            ("Error during parsing:",
             Mode => GPS.Messages_Windows.Error);

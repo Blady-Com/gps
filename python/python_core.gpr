@@ -1,7 +1,7 @@
 with "../shared";
 with "../kernel/kernel_core";
 with "gnatcoll";
-with "gnatcoll_python";
+with "gnatcoll-python";
 
 project Python_Core is
 

@@ -42,11 +42,11 @@ project CLI is
 
       for Ignored_Subprojects use (
          "gnatcoll",
-         "gnatcoll_shared",
-         "gnatcoll_iconv", 
-         "gnatcoll_python",
-         "gnatcoll_sqlite",
-         "gnatcoll_xref",
+         "gnatcoll-shared",
+         "gnatcoll-iconv",
+         "gnatcoll-python",
+         "gnatcoll-sqlite",
+         "gnatcoll-xref",
          "templates_parser",
          "xmlada",
          "xmlada_sax",

@@ -87,8 +87,10 @@ project GPS is
       case Shared.OS is
          when "Windows_NT" =>
             for Switches ("Ada") use ("obj/gps.res", "-mwindows");
-         when "unix" | "osx" =>
+         when "unix" =>
             null;
+         when "osx" =>
+            for Switches ("Ada") use ("-Wl,-no_pie");
       end case;
       for Switches ("Ada") use Linker'Switches ("Ada")
          & Shared.Linker'Switches ("Ada");
